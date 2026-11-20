@@ -1,0 +1,43 @@
+TaskFlow verification
+
+openjdk version "17.0.21.1" 2026-11-17 LTS
+OpenJDK Runtime Environment Corretto-17.0.21.1.2 (build 17.0.21.1+2-LTS)
+OpenJDK 64-Bit Server VM Corretto-17.0.21.1.2 (build 17.0.21.1+2-LTS, mixed mode, sharing)
+javac 17.0.21.1
+javadoc 17.0.21.1
+
+Eclipse IDE for Java Developers 4.30.0
+Eclipse JDT full build: 0 errors
+Debug launch: taskflow.TaskFlow
+Breakpoint reached: main, line 22
+Resumed the Java application from Eclipse.
+
+Opened index and followed class link: TaskManager Class TaskManager
+Opened method: update(java.util.UUID,java.lang.String,java.lang.String,taskflow.Status)
+Browser: 156.0.8078.79
+
+M01 | PASS | This task no longer exists. Count = 0
+M02 | PASS | This task no longer exists. Count = 0
+M03 | PASS | Duplicate removed by ID. Remaining title = Notes
+M04 | PASS | Enter a task title. Original task retained.
+M05 | PASS | Choose a task status. Count = 1
+M06 | PASS | This workspace is already open.
+M07 | PASS | Same ID, status and UTF-8 multiline text after reopen.
+M08 | PASS | Save refused. In-memory count = 0
+M09 | PASS | Retry saved 1 task.
+M10 | PASS | Invalid file reported. Original bytes retained.
+10/10 model and storage checks passed.
+
+D01 | PASS | No tasks yet. Edit disabled. Rows = 0
+D02 | PASS | Enter a task title.
+D03 | PASS | Prepare the OEL report / Pending
+D04 | PASS | All 3 titles in creation order.
+D05 | PASS | Print the OEL report / In Progress. Same ID.
+D06 | PASS | Completed filter shows 2 completed tasks.
+D07 | PASS | Notes search + status filter returned Generate Javadoc.
+D08 | PASS | No matching tasks. Rows = 0
+D09 | PASS | Cancel retained the selected task. Rows = 3
+D10 | PASS | Review class diagram removed. Rows = 2
+D11 | PASS | Reopened with 2 tasks. Edited ID and status retained.
+D12 | PASS | Add, search and task rows visible at minimum size.
+12/12 desktop checks passed.
